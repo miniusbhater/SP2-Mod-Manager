@@ -36,14 +36,15 @@
             label2 = new Label();
             checkBox1 = new CheckBox();
             label3 = new Label();
+            checkBox4 = new CheckBox();
             checkBox2 = new CheckBox();
+            label6 = new Label();
+            checkBox3 = new CheckBox();
             button2 = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button3 = new Button();
             label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
-            checkBox3 = new CheckBox();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,9 +81,11 @@
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Controls.Add(checkBox1);
             flowLayoutPanel1.Controls.Add(label3);
+            flowLayoutPanel1.Controls.Add(checkBox4);
             flowLayoutPanel1.Controls.Add(checkBox2);
             flowLayoutPanel1.Controls.Add(label6);
             flowLayoutPanel1.Controls.Add(checkBox3);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(12, 42);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(426, 263);
@@ -120,16 +123,48 @@
             label3.TabIndex = 8;
             label3.Text = "Recommended--------------------------------------------------------------";
             // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(3, 58);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(170, 19);
+            checkBox4.TabIndex = 13;
+            checkBox4.Text = "Notification - miniusbhater";
+            checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.CheckedChanged += checkBox4_CheckedChanged;
+            // 
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(3, 58);
+            checkBox2.Location = new Point(3, 83);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(166, 19);
             checkBox2.TabIndex = 9;
             checkBox2.Text = "SP2Patcher - miniusbhater";
             checkBox2.UseVisualStyleBackColor = true;
             checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(3, 105);
+            label6.Name = "label6";
+            label6.Size = new Size(398, 15);
+            label6.TabIndex = 10;
+            label6.Text = "Visual------------------------------------------------------------------------";
+            label6.Click += label6_Click;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(3, 123);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(164, 19);
+            checkBox3.TabIndex = 12;
+            checkBox3.Text = "DisplayFPS - miniusbhater";
+            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
             // button2
             // 
@@ -168,29 +203,8 @@
             label5.Name = "label5";
             label5.Size = new Size(31, 15);
             label5.TabIndex = 7;
-            label5.Text = "1.0.0";
+            label5.Text = "1.0.1";
             label5.Click += label5_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(3, 80);
-            label6.Name = "label6";
-            label6.Size = new Size(398, 15);
-            label6.TabIndex = 10;
-            label6.Text = "Visual------------------------------------------------------------------------";
-            label6.Click += label6_Click;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(3, 98);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(164, 19);
-            checkBox3.TabIndex = 12;
-            checkBox3.Text = "DisplayFPS - miniusbhater";
-            checkBox3.UseVisualStyleBackColor = true;
-            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
             // Form1
             // 
@@ -233,5 +247,6 @@
         private Label label5;
         private Label label6;
         private CheckBox checkBox3;
+        private CheckBox checkBox4;
     }
 }

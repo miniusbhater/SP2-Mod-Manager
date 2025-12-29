@@ -88,6 +88,19 @@ namespace SP2_Mod_Manager
                 }
             }
 
+            if (checkBox4.Checked)
+            {
+                string url = "https://github.com/miniusbhater/SP2-Notification-Library/releases/latest/download/Notification.dll";
+                string path = textBox1.Text;
+                string bepPath = $"{path}\\BepInEx\\plugins\\Notification.dll";
+                using (WebClient client1 = new WebClient())
+                {
+                    label4.Text = ("Installing Notification");
+                    client1.DownloadFile(url, bepPath);
+                    label4.Text = ("Install Complete");
+                }
+            }
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -116,6 +129,11 @@ namespace SP2_Mod_Manager
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
 
         }
