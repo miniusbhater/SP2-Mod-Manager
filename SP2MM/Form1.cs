@@ -69,7 +69,7 @@ namespace SP2_Mod_Manager
                 string bepPath = $"{path}\\BepInEx\\plugins\\SP2Unlocker.dll";
                 using (WebClient client1 = new WebClient())
                 {
-                    label4.Text = ("Installing SP2 Unlocker");
+                    label4.Text = ("Installing SP2Unlocker");
                     client1.DownloadFile(url, bepPath);
                     label4.Text = ("Install Complete");
                 }

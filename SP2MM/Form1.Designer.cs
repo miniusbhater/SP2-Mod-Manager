@@ -139,9 +139,9 @@
             checkBox2.AutoSize = true;
             checkBox2.Location = new Point(3, 83);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(166, 19);
+            checkBox2.Size = new Size(173, 19);
             checkBox2.TabIndex = 9;
-            checkBox2.Text = "SP2Patcher - miniusbhater";
+            checkBox2.Text = "SP2Unlocker - miniusbhater";
             checkBox2.UseVisualStyleBackColor = true;
             checkBox2.CheckedChanged += checkBox2_CheckedChanged;
             // 
@@ -203,7 +203,7 @@
             label5.Name = "label5";
             label5.Size = new Size(31, 15);
             label5.TabIndex = 7;
-            label5.Text = "1.0.1";
+            label5.Text = "1.0.2";
             label5.Click += label5_Click;
             // 
             // Form1
