@@ -101,7 +101,24 @@ namespace SP2_Mod_Manager
                 }
             }
 
-        }
+            if (checkBox5.Checked)
+            {
+                string url = "https://github.com/miniusbhater/MusicReplacer/releases/latest/download/MusicReplacer.zip";
+                string path = textBox1.Text;
+                string filePath = $"{path}\\MusicReplacer.zip";
+                string pluginPath = $"{path}\\BepInEx\\plugins";
+                using (WebClient client = new WebClient())
+                {
+                    label4.Text = ("Installing MusicReplacer");
+                    client.DownloadFile(url, filePath);
+                    ZipFile.ExtractToDirectory(filePath, path, true);
+                    Directory.CreateDirectory(pluginPath);
+                    label4.Text = ("Install Complete");
+                }
+
+
+            }
+        } 
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -134,6 +151,11 @@ namespace SP2_Mod_Manager
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
 
         }

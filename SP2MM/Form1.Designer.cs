@@ -40,6 +40,8 @@
             checkBox2 = new CheckBox();
             label6 = new Label();
             checkBox3 = new CheckBox();
+            label7 = new Label();
+            checkBox5 = new CheckBox();
             button2 = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button3 = new Button();
@@ -85,6 +87,8 @@
             flowLayoutPanel1.Controls.Add(checkBox2);
             flowLayoutPanel1.Controls.Add(label6);
             flowLayoutPanel1.Controls.Add(checkBox3);
+            flowLayoutPanel1.Controls.Add(label7);
+            flowLayoutPanel1.Controls.Add(checkBox5);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(12, 42);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -166,6 +170,26 @@
             checkBox3.UseVisualStyleBackColor = true;
             checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(3, 145);
+            label7.Name = "label7";
+            label7.Size = new Size(398, 15);
+            label7.TabIndex = 14;
+            label7.Text = "Customise-------------------------------------------------------------------";
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(3, 163);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(184, 19);
+            checkBox5.TabIndex = 15;
+            checkBox5.Text = "MusicReplacer - miniusbhater";
+            checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
+            // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -203,7 +227,7 @@
             label5.Name = "label5";
             label5.Size = new Size(31, 15);
             label5.TabIndex = 7;
-            label5.Text = "1.0.2";
+            label5.Text = "1.0.3";
             label5.Click += label5_Click;
             // 
             // Form1
@@ -248,5 +272,7 @@
         private Label label6;
         private CheckBox checkBox3;
         private CheckBox checkBox4;
+        private Label label7;
+        private CheckBox checkBox5;
     }
 }
